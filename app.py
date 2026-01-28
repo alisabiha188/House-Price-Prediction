@@ -74,6 +74,6 @@ input_data = np.array([[
 if st.button("Predict Price"):
     try:
         prediction = model.predict(input_data)
-        st.success(f"💰 Estimated House Price: {prediction[0]:,.2f}")
+        st.success(f"Estimated House Price: {prediction[0]:,.2f}")
     except Exception as e:
         st.error(f"Error during prediction: {e}")
